@@ -27,6 +27,7 @@
   "dependencies": {
     "browserstack-local": "^1.4.8",
     "codeceptjs": "^3.3.6",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.2.2"
   }
 }
