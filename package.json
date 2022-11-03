@@ -20,12 +20,12 @@
   "homepage": "https://github.com/agkocaman/AutomationChallenge#readme",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "playwright": "^1.18.1",
+    "playwright": "^1.27.1",
     "selenium-standalone": "^8.2.3",
-    "webdriverio": "^6.12.1"
+    "webdriverio": "^7.25.4"
   },
   "dependencies": {
-    "browserstack-local": "^1.4.8",
+    "browserstack-local": "^1.5.1",
     "codeceptjs": "^3.3.6",
     "dotenv": "^16.0.3",
     "puppeteer": "^19.2.2"
