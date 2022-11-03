@@ -34,7 +34,8 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    casesPage:'./pages/cases.js'
   },
   name: 'AutomationChallenge'
 }

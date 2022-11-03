@@ -48,7 +48,7 @@ jobs:
 
       # we need to install CircleCI CLI tool
       # to run the "manual" tests
-      - run: npm run parallel
+      - run: npx codeceptjs run
 workflows:
   orb_tests:
     jobs:

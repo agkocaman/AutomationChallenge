@@ -1,0 +1,7 @@
+{
+    "wait":2,
+    "url":"https://stage.pisano.co/widget_test.html?code=PSN-cg56fpn&env=stage",
+    "successful":"Thanks, I think test were succeeded",
+    "firstPageDataText":"Sentiment"
+    
+}
