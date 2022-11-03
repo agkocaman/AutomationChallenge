@@ -20,7 +20,7 @@
   "homepage": "https://github.com/agkocaman/AutomationChallenge#readme",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "playwright": "^1.27.1",
+    "playwright": "^1.18.1",
     "selenium-standalone": "^8.2.3",
     "webdriverio": "^7.25.4"
   },
