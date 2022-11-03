@@ -3,8 +3,21 @@ const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
 
-// enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
-setCommonPlugins();
+
+const cp = require('child_process');
+const clientPlaywrightVersion = cp.execSync('npx playwright --version').toString().trim().split(' ')[1];
+
+const caps = {
+  'browser': 'chrome', // allowed browsers are `chrome`, `edge`, `playwright-chromium`, `playwright-firefox` and `playwright-webkit`
+  'os': 'osx',
+  'os_version': 'catalina',
+  'name': 'Codecept test using Playwright',
+  'build': 'CodeceptJS on BrowserStack',
+  'browserstack.username':'ahmetgokhankocam_tMR6Dw',
+  'browserstack.accessKey': '21deuZUp4xnqDWmk6VkZ',
+  'client.playwrightVersion': clientPlaywrightVersion  // example '1.11.1'
+};
+
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
@@ -12,9 +25,12 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'http://localhost',
+      //url: 'http://localhost',
       show: true,
-      browser: 'chromium'
+      browser: 'chromium',
+       /*chromium: {
+        browserWSEndpoint: { wsEndpoint: `wss://cdp.browserstack.com/playwright?caps=${encodeURIComponent(JSON.stringify(caps))}` }
+      } */
     }
   },
   include: {

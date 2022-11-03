@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parallel": "npx codeceptjs run-multiple bstack -c parallel/codecept.conf.js --steps"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "playwright": "^1.18.1",
-    "selenium-standalone": "^8.2.3"
+    "selenium-standalone": "^8.2.3",
+    "webdriverio": "^6.12.1"
   },
   "dependencies": {
-    "codeceptjs": "^3.3.6"
+    "browserstack-local": "^1.4.8",
+    "codeceptjs": "^3.3.6",
+    "dotenv": "^16.0.3"
   }
 }
