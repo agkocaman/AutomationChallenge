@@ -26,7 +26,7 @@ exports.config = {
   helpers: {
     Playwright: {
       //url: 'http://localhost',
-      show: true,
+      show: false,
       browser: 'chromium',
        /*chromium: {
         browserWSEndpoint: { wsEndpoint: `wss://cdp.browserstack.com/playwright?caps=${encodeURIComponent(JSON.stringify(caps))}` }
