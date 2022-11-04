@@ -8,6 +8,7 @@ exports.config = {
     output: './output',
     include: {
         I: './steps_file.js',
+        casesPage:'../pages/cases.js'
      },
     helpers: {
         WebDriver: {
