@@ -1,6 +1,6 @@
 const {I} = inject();
 var faker = require('faker');
-faker.locale = "tr";
+faker.locale = "en";
 module.exports = {
     iframeButton : '//iframe[@id="psn-widget-button-frame"]',
     iframeContent: '//iframe[@id="psn-widget-content-frame"]',
