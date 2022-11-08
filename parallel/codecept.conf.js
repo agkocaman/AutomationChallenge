@@ -70,20 +70,26 @@ exports.config = {
                         },
                         "browserVersion": "latest",
                     },
-                    //Mentioned below are the capabilities based on JSON Wire Protocol
-                    /*
+
+                },
+                
+                {
+                    browser: "edge",
+                    //For W3C-based scripts, use the following capabilties:
                     desiredCapabilities: {
-                        "os": "Windows",
-                        "os_version": "10",
-                        "browser_version": "latest",
-                        "project": "Codecept + WebdriverIO",
-                        "build": "browserstack-build-1",
-                        "name": "BStack parallel codecept-js 2",
-                        "browserstack.debug": "true",
-                        'browserstack.networkLogs': 'true',
-                        "browserstack.source": "codecept-js:sample-main:v1.0"
+                        "bstack:options" : {
+                            "os": "Windows",
+                            "osVersion": "10",
+                            "projectName": "AutomationChallenge",
+                            "buildName": "browserstack-Edge-1",
+                            "sessionName": "BStack parallel codecept-js 3",
+                            "debug" : "true",
+                            "networkLogs" : "true",
+                            "source": "codecept-js:sample-main:v1.0"
+                        },
+                        "browserVersion": "latest",
                     },
-                    */
+
                 },
             ],
         },
