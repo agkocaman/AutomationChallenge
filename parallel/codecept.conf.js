@@ -30,7 +30,7 @@ exports.config = {
                             "os": "OS X",
                             "osVersion": "Catalina",
                             "projectName": "AutomationChallenge",
-                            "buildName": "browserstack-build-1",
+                            "buildName": "browserstack-build-Safari-1",
                             "sessionName": "BStack parallel codecept-js 1",
                             "debug" : "true",
                             "networkLogs" : "true",
