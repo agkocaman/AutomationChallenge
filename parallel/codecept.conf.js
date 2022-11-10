@@ -29,7 +29,7 @@ exports.config = {
                         "bstack:options" : {
                             "os": "OS X",
                             "osVersion": "Catalina",
-                            "projectName": "Codecept + WebdriverIO",
+                            "projectName": "AutomationChallenge",
                             "buildName": "browserstack-build-1",
                             "sessionName": "BStack parallel codecept-js 1",
                             "debug" : "true",
